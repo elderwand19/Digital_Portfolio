@@ -1,0 +1,762 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    
+      body {
+        font-family: Verdana, sans-serif;
+      }
+    
+      .mySlides {
+        display: none;
+      }
+    
+      img {
+        vertical-align: middle;
+      }
+    
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 2000px;
+        position: relative;
+    
+    
+    
+    
+    
+      }
+    
+    
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+    
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+    
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+    
+      .active {
+        background-color: #717171;
+      }
+    
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+    
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+    
+        to {
+          opacity: 1
+        }
+      }
+    
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+    
+        to {
+          opacity: 1
+        }
+      }
+    
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px
+        }
+      }
+    </style>
+
+    <!-- Todo: put here your site title -->
+    <title>Shivam Shakya | Portfolio</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Shivam Shakya</span>
+          <br />
+          CSE(Specialization in Gaming Tech) Student.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                My name is Shivam Shakya and currently, I am pursuing B.Tech in Computer Science Engineering from Vellore Institute of
+                Technology Bhopal. My birthplace is Gwalior, Madhya Pradesh and currently, my hometown is Gwalior, Madhya Pradesh.
+
+              </p>
+              <p class="about-wrapper__info-text">
+                My father’s name is Mr. Dinesh Shakya working as General Branch Manager in State Bank of India, Seondha. My mother’s
+                name is Mrs. Mamta Shakya, and she is a homemaker. They have always encouraged me to pursue my dreams.
+              </p>
+              <p class="about-wrapper__info-text">
+                My elder sister's name is Mrs. Shivani Shakya [BTech Textile Technology from NIFT Bhopal] currently pursuing MA 
+                in Archaeology. They always have been the pillars behind my success.              
+              </p>
+              <p class="about-wrapper__info-text">
+                In my spare time  I usually play online strategy-based games, fps games, watch tv series, photography and travelling.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Exhibition 1</h3>
+                <h3 class="project-wrapper__text-title">Zombie Man Chronicles</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Unity 2D, C#, JavaScript</br>
+                    <br>Role: Designer</br>
+                    This is a 2-D platformer game which was created in unity by 5 members in which there are multiple platforms where zombies are moving back and forth. Game focuses on the movement like jump and forward and backward movement. The protagonist's town is under attack of zombies and slowly protagonist is getting converted into a zombie as he has
+                    been attacked once but his uncle is a scientist who found a cure to this zombification, but he lacks some ingredients,
+                    and each ingredient is guarded by zombies.
+                    The player must dodge every zombie to get the ingredient, and if you touch the zombie your health deteriorates.
+
+                  </p>
+                </div>
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a> -->
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/elderwand19/Zombie_Man"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project1.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Exhibition 2- Personify (2 members)</h3>
+                <h3 class="project-wrapper__text-title">Personify</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: UI Path
+                    Role: Developer</br>
+                    Personify is a project that aims to aid companies in creating and understanding their customer base utilizing Facebook’s
+                    own Audience Insight program to analyze the core users of their software/ product.
+                     This project develops a persona based on a given set of parameters decided by the company and generate a common set of
+                    users
+
+                  </p>
+                </div>
+                <a
+                  <!-- rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  > -->
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project2.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">EPIC Project:</h3>
+                <h3 class="project-wrapper__text-title">Electronic Invoicing for the  Supply Chain Management
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: PIL, NLP, OCR, Open CV-Python, RegEx, HTML, CSS, JavaScript.
+                    Role: Research Work (History of OCR) , Existing Projects, Website Implementation, Documentation</br>
+                    Digital Invoicing systems have been all over the market for the past few years and many companies have incorporated this
+                    strategy in their invoicing procedure to reduce the cost and time associated with it.
+                    Hence, we plan on taking it a step further with the use of OCR to work on automating several legal filing systems
+                    (Income Tax Returns & GST Returns to start with), 
+                    So that the middle class wouldn’t have to be bullied by the “Charges” of Legal Consultants & Chartered Accountants.
+
+                  </p>
+                </div>
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a> -->
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project3.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Capstone Project</h3>
+                <h3 class="project-wrapper__text-title">Decipher</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Bootstrap, JavaScript, Python</br>
+                    Decipher is a web-app which is an amalgamation of these solutions combined with modern day technologies.
+                    It provides users with concise news articles on topics of their interest using the recommender module and at the same
+                    time performs a legitimacy check on the articles to prevent false news from spreading.
+
+          
+                  </p>
+                </div>
+                <a <!-- rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"> -->
+                    <img alt="Project Image" class="img-fluid" src="assets/project4.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Other Projects:</h3>
+                <h3 class="project-wrapper__text-title">Sphere – O – Thon</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Unity-3D</br>
+                    A sphere moving on an infinite ramp which has to avoid the obstacles for completing the missions. Its genre is arcade
+                    and puzzle. 
+                    The main objects which are used in the game are cube, sphere and cuboid. 
+                    Player wins the game if he/she completes all the levels with passing through all the obstacles and without falling from
+                    the ramp. Player loses if he/she touches an obstacle in the path of falls through the path.  It's simple and addictive
+                    game with a classic design. It relaxes our mind in only few minutes of gameplay. 
+
+          
+                  </p>
+                </div>
+                <!-- <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn cta-btn--hero"
+                            href="#!"
+                          >
+                            See Live
+                          </a> -->
+                <!-- <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn text-color-main"
+                            href="#!"
+                          >
+                            Source Code
+                          </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="assets/project5.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Other Projects:</h3>
+                <h3 class="project-wrapper__text-title">ILVIT</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Unity-3D</br>
+                  The VIT Bhopal campus was designed on Unity 3D, which included the academic campus, and hostel campus replica.
+                  Later this model was converted into VR mode and presented in Astha and to VC VIT Bhopal.</p>
+                </div>
+                <!-- <a
+                                      rel="noreferrer"
+                                      target="_blank"
+                                      class="cta-btn cta-btn--hero"
+                                      href="#!"
+                                    >
+                                      See Live
+                                    </a> -->
+                <!-- <a
+                                      rel="noreferrer"
+                                      target="_blank"
+                                      class="cta-btn text-color-main"
+                                      href="#!"
+                                    >
+                                      Source Code
+                                    </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="assets/project6.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          Technical Skills
+        </h2>
+        <div class="row about-wrapper">
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/skills.png"
+                alt="Profile Image" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+    
+              <p class="about-wrapper__info-text" style="text-align:center">
+                Game Designing<br>
+                Unity<br>
+                Unity 3D<br>
+                Virtual Reality<br> 
+                Augmented Reality <br>
+                Java <br> 
+                JavaScript<br>
+                 Python (Intermediate)<br>
+
+              </p>
+    
+    
+              <span class="d-flex mt-3">
+    
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+    
+
+    <!-- **** Certificates Section **** -->
+    <section id="Certificates">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Certificates
+          </h2>
+          <center>
+    
+            <!-- Each .row is a project -->
+    
+    
+            <div class="col-lg-4 col-sm-12">
+    
+              <div class="project-wrapper__text">
+    
+    
+                <div class="slideshow-container">
+                  <center>
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="./assets/3.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="./assets/2.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="./assets/4.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                  </center>
+                </div>
+                <br>
+          </center>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+    
+          <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+        </div>
+      </div>
+      <!--  <div class="col-lg-8 col-sm-12">
+                  <div class="project-wrapper__image">
+                    <a href="#!" target="_blank">
+                      <div data-tilt class="thumbnail rounded">
+                        <img class="img-fluid" src="./assets/project.jpg" />
+                      </div>
+                    </a>
+                  </div>
+                </div> -->
+      </div>
+      <!-- /END Project -->
+      </div>
+      </div>
+    </section>
+    <!-- /END Certificates Section -->
+
+    <!-- **** Achievement Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          Extra-Curricular Achievements
+        </h2>
+        <div class="row about-wrapper">
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/achv.png"
+                alt="Profile Image" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+    
+              <p class="about-wrapper__info-text" style="text-align:center">
+                Organized Sell-a-thon –AdVitya, VIT Bhopal<br>
+                Organized Gaming CS-Go tournament- AdVitya, VIT Bhopal<br>
+                Represented VIT Bhopal, Gaming club in Astha Fair<br>
+                Presented by VIT Bhopal VR game to VC sir, VIT Bhopal<br>
+    
+              </p>
+    
+    
+              <span class="d-flex mt-3">
+    
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Achievement Section -->
+
+    <!-- **** Future Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Future Scope</h2>
+    
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Exhibition 1</h3>
+                <div>
+                  <p class="mb-4">
+                    Short term goal is to work in a reputed company and receive industrial experience on latest technologies<br><br>
+
+                    Long term goal is to settle in a much better company and learn something everyday to grow <br>    
+                  </p>
+                </div> 
+               </div>
+              </div>           
+          </div>
+          
+          <!-- /END Project --> 
+          </div>
+          </div>
+          </section>
+
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        Contact
+      </h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">
+          shivam19shakya@gmail.com<br>
+          +91-9589547188
+        </p>
+        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:shivam19shakya@gmail.com">Call to Action</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/elderwand19" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shivamshakya/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/elderwand19" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
